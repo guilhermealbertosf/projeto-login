@@ -3,9 +3,57 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 :root{
+    --bord: 25px;
     --cor1:#F4DE9D;
     --cor2:#4C8FCC;
     --cor3:#605338;
+}
+body{
+    background-color: var(--cor2);
+}
+main{
+    
+}
+section#login{
+    margin: auto;
+    background-color: white;
+    width: 250px;
+    border-radius: var(--bord);
+    margin-top: 30px;
+}
+div#imagem{
+    height: 30vh;
+    background: black url("../images/pexels-pixabay-161043.jpg") center top no-repeat fixed;
+    background-size: cover;
+    border-radius: var(--bord) var(--bord) 0px 0px;
+}
+div#formulario{
+    padding: 10px;
+}
+div#formulario h1{
+    text-align: center;
+    padding: 10px;
+}
+div#formulario > p{
+    font: normal 0.8em arial;
+}
+form p{
+    text-align: right;
+    background-color: var(--cor2);
+    border-radius: 5px ;
+    margin: 5px 0px;
+}
+form input{
+    height: 30px;  
+}
+form input.entrada{
+    border-radius: 5px;
+    width: 80%;
+    
+}
+form input.saida{
+    width: 100%;
 }
