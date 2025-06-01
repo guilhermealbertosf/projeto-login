@@ -24,22 +24,30 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -55%);
+    
 
     margin: auto;
     background-color: white;
     width: 250px;
     border-radius: var(--bord);
-    margin-top: 30px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.518);
+    
+    transform: translate(-50%, -55%);
+    transition: width 0.3s, heigth 0.3s ;
+    transition-timing-function: ease;
+
+
 }
 div#imagem{
     height: 30vh;
     background: black url("../images/pexels-pixabay-161043.jpg") center top no-repeat fixed;
     background-size: cover;
     border-radius: var(--bord) var(--bord) 0px 0px;
+    display: block;
 }
 div#formulario{
     padding: 10px;
+    display: block;
 }
 div#formulario h1{
     text-align: center;
@@ -70,6 +78,12 @@ form input{
     height: 40px;  
 }
 
+form input.entrada{
+    border-radius: 5px;
+    border: 0px solid black;
+    width: 75%;  
+    margin: 1px 3px 1px auto;
+}
 .icones_entrada{
     position: absolute;
     left: 4px;
@@ -79,11 +93,12 @@ form input{
     height: 30px;
 }
 
-form input.entrada{
-    border-radius: 5px;
-    border: 0px solid black;
-    width: 75%;  
-    margin: 1px 3px 1px auto;
+form input.entrada:hover{
+    background-color: #f3e9fa;
+}
+form input.entrada:focus{
+    background-color: rgb(185, 185, 247);
+    font-size: 1em;
 }
 
 /*Saída de dados*/
@@ -95,9 +110,12 @@ form input.saida{
     font: normal 1em arial;
 }
 
-form #botao_entrar{
+form input[type=submit]{
     background-color: var(--cor1);
     color: white;
+}
+form input[type=submit]:hover{
+    background-color: #cda03ee9;
 }
 
 form #botao_esquecer_senha{
@@ -107,6 +125,9 @@ form #botao_esquecer_senha{
     
 }
 
+form #botao_esquecer_senha:hover{
+    background-color: #8daecd85;
+}
 #icone_email{
     position: absolute;
     right: 35px;
