@@ -69,9 +69,6 @@ form p{
 form p.paragrafo_entrada{
     background-color: var(--cor2);
 }
-form p.paragrafo_saida{  
-
-}
 
 /*Entrada de dados*/
 form input{
